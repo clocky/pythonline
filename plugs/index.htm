@@ -1,0 +1,100 @@
+<html><head><title>Plugs</title>
+
+<SCRIPT LANGUAGE = "JavaScript">
+
+<!--Browser Type ID-->
+
+    browserName = navigator.appName;          
+    browserVer = parseInt(navigator.appVersion);  
+        if (browserName == "Netscape" && browserVer >= 3) version = "n3";
+        else version = "n2";
+
+<!--End Browser Type ID-->
+
+<!--Preload On Menu-->
+
+ if (version == "n3") {               
+ 
+        toc1on = new Image(201, 207);                            <!--plugs-->
+        toc1on.src ="images/plugged.gif";               
+
+<!--End PreLoad-->
+
+<!-- Preload Off Menu -->
+
+        toc1off = new Image(201, 207);                            <!--plugs-->
+        toc1off.src ="images/plug_00.gif";          
+}
+
+<!--End Preload Off Menu-->
+
+<!--Control-->
+
+function img_act(imgName) {
+        if (version == "n3") {
+        imgOn = eval(imgName + "on.src");
+        document [imgName].src = imgOn;
+        }
+}
+
+function img_inact(imgName) {
+        if (version == "n3") {
+        imgOff = eval(imgName + "off.src");
+        document [imgName].src = imgOff;
+        }
+}
+
+<!--End Control-->
+
+</SCRIPT>
+
+</head>
+<body bgcolor="#ffffff">
+
+<center>
+<table width=740 border=0 cellpadding=0 cellspacing=0>
+<tr><td width=533 valign=top>
+<img width=533 height=410 src="images/plugleft.gif" lowsrc="images/plugl_low.gif" usemap="#leftmap" border=0></td>
+<td width=207 valign=top>
+<A HREF="index.htm" onMouseover = "img_act('toc1')"  onMouseout = "img_inact('toc1')"><img width=207 height=201 src="images/plug_00.gif" alt="Made You Look!" name="toc1" border=0><br>
+<img width=207 height=209 src="images/plugbrt.gif" lowsrc="images/plugbrt_low.gif" usemap="#rightmap" border=0></td>
+</tr>
+<tr><td valign=top align=center colspan=2>
+<br><img width=570 height=56 src="/images/navbar.gif" ismap usemap="#navmap" border=0></td>
+</tr>
+</table>
+
+<!-- begin image maps-->
+
+<map name="leftmap">
+<area shape="rect" coords="10,36,115,163" href="palin/index.htm">
+<area shape="rect" coords="181,112,286,239" href="cleese/index.htm">
+<area shape="rect" coords="329,6,434,133" href="gilliam/index.htm">
+<area shape="rect" coords="34,238,139,365" href="jones/index.htm">
+<area shape="rect" coords="229,280,334,407" href="idle/index.htm">
+<area shape="rect" coords="392,176,497,303" href="chapman/index.htm">
+<area shape="default" nohref>
+</map>
+
+<map name="rightmap">
+<area shape="rect" coords="34,62,139,189" href="links/index.htm">
+<area shape="default" nohref>
+</map>
+
+<map name="navmap">
+<area shape="rect" coords="7,14,88,38" href="/detour/index.htm">
+<area shape="rect" coords="100,9,162,39" href="/newstuff/index.htm">
+<area shape="rect" coords="173,8,227,42" href="/spamclub/index.htm">
+<area shape="rect" coords="238,9,303,40" href="/shopping/index.htm">
+<area shape="rect" coords="316,7,362,41" href="/chitchat/index.htm">
+<area shape="rect" coords="373,9,432,40" href="/games/index.htm">
+<area shape="rect" coords="444,11,498,40" href="/plugs/index.htm">
+<area shape="rect" coords="511,13,556,38" href="/newhome.htm" alt="Home">
+<area shape="default" nohref>
+</map>
+
+<!-- end image maps-->
+
+</center>
+</body>
+</html>

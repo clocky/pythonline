@@ -1,0 +1,104 @@
+<HTML>
+<HEAD>
+<TITLE>widemenu</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<!-- ImageReady Preload Script (widemenu.psd) -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		palindrome_over = newImage("images/palindrome-over.gif");
+		cleeseshop_over = newImage("images/cleeseshop-over.gif");
+		jonesville_over = newImage("images/jonesville-over.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+
+</HEAD>
+<BODY BGCOLOR=#FFFFFF ONLOAD="preloadImages();">
+<!-- ImageReady Slices (widemenu.psd) -->
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD ROWSPAN=2>
+			<A HREF="/plugs/palin/index.shtml"
+			   ONMOUSEOVER="changeImages('palindrome', 'images/palindrome-over.gif'); return true;"
+			   ONMOUSEOUT="changeImages('palindrome', 'images/palindrome.gif'); return true;">
+				<IMG NAME="palindrome" SRC="images/palindrome.gif" WIDTH=130 HEIGHT=163 BORDER=0></A></TD>
+		<TD ROWSPAN=4>
+			<A HREF="/plugs/cleese/index.shtml"
+			   ONMOUSEOVER="changeImages('cleeseshop', 'images/cleeseshop-over.gif'); return true;"
+			   ONMOUSEOUT="changeImages('cleeseshop', 'images/cleeseshop.gif'); return true;">
+				<IMG NAME="cleeseshop" SRC="images/cleeseshop.gif" WIDTH=122 HEIGHT=212 BORDER=0></A></TD>
+		<TD COLSPAN=2>
+			<A HREF="/plugs/gilliam/index.shtml">
+				<IMG SRC="images/gilliam.gif" WIDTH=165 HEIGHT=137 BORDER=0></A></TD>
+		<TD ROWSPAN=3>
+			<IMG SRC="images/widemenu_04.gif" WIDTH=183 HEIGHT=199></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=137></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<IMG SRC="images/widemenu_05.gif" WIDTH=32 HEIGHT=75></TD>
+		<TD ROWSPAN=4>
+			<A HREF="/plugs/chapman/index.shtml">
+				<IMG SRC="images/chapman.gif" WIDTH=133 HEIGHT=129 BORDER=0></A></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=26></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=4>
+			<A HREF="/plugs/jones/index.shtml"
+			   ONMOUSEOVER="changeImages('jonesville', 'images/jonesville-over.gif'); return true;"
+			   ONMOUSEOUT="changeImages('jonesville', 'images/jonesville.gif'); return true;">
+				<IMG NAME="jonesville" SRC="images/jonesville.gif" WIDTH=130 HEIGHT=169 BORDER=0></A></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=36></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="/plugs/links.shtml">
+				<IMG SRC="images/links.gif" WIDTH=183 HEIGHT=133 BORDER=0></A></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=13></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ROWSPAN=2>
+			<A HREF="/plugs/idle/index.shtml">
+				<IMG SRC="images/idlewild.gif" WIDTH=154 HEIGHT=120 BORDER=0></A></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=54></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/widemenu_10.gif" WIDTH=133 HEIGHT=66></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=66></TD>
+	</TR>
+</TABLE>
+<!-- End ImageReady Slices -->
+
+</BODY>
+</HTML>

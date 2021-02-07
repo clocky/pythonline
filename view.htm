@@ -1,0 +1,33 @@
+<HTML>
+<BODY BGCOLOR="#FFFFFF">
+<CENTER>
+<FONT FACE="ARIAL">
+<H2>Python tour poll results so far<BR> 
+    click the button to get current results
+</H2>
+<HR WIDTH=450>
+</CENTER>
+
+</FONT>
+
+<!-- In the form below, you MUST supply a name=action of
+     Either View or Vote. You must also supply the
+     name=filebase for the name of the survey files 
+     In this example, the following files will be created:
+           demo.dat   The master datafile
+           demo.log   The log file for importing into a database
+           demo.cnt   A counter file to assign unique numbers
+-->
+
+  <FORM METHOD="POST" ACTION="http://www.pythonline.com/cgi-bin/survey/survey.pl">
+  <input type=hidden name=action value="VIEW">
+  <input type=hidden name=filebase value="python">
+ <CENTER>
+ <B>Press the button below for current results</B>
+ <P>
+ <INPUT TYPE="submit" VALUE="View">  
+  </FORM>
+ </CENTER>
+
+</BODY>
+</HTML>
